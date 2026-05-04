@@ -1,0 +1,10 @@
+import { createFileRoute } from "@tanstack/react-router";
+import EmployeeTable from "../../components/EmployeeTable";
+
+export const Route = createFileRoute("/employees/")({
+  component: Employees,
+});
+
+function Employees() {
+  return <EmployeeTable />;
+}
