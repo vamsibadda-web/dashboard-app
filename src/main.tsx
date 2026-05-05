@@ -12,11 +12,7 @@ const router = createRouter({
 });
 
 
-declare module "@tanstack/react-router" {
-  interface Register {
-    router: typeof router;
-  }
-}
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <MantineProvider withGlobalStyles={false} withNormalizeCSS={false}>
